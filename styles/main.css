@@ -1,0 +1,53 @@
+/* layout section of stylesheet*/
+body{
+padding: 1.2em;
+background: #fafafa;
+font-size: 16px;
+font-family: 'Nunito', sans-serif;
+display: inline-block;
+}
+ul {
+  list-style-type: none;
+  padding: 1em;
+}
+
+.demo-card-wide.mdl-card {
+ width: 36em;
+ margin:auto;
+  }
+/* section specific stylesheet*/
+
+.demo-card-wide > .mdl-card__title {
+  height: 10em;
+  background: url('https://images.pexels.com/photos/893896/pexels-photo-893896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center / cover;
+}
+.mdl-card__title_text {
+  color: hsla(0, 0%, 100%, 0.9);
+  font-weight: bold;
+  height: 1em;
+  font-size: 3em;
+  margin:auto;
+ }
+.mdl-button{
+  padding-left: 50px;
+}
+
+.mdl-card__actions{
+  height:4em;
+}
+
+#newToDoText{
+  padding: .5em;
+}
+.mdl-list__item-primary-content {
+  font-size: 1.2rem;
+  font-family: 'Nunito', sans-serif;
+  margin: auto;
+  width: 500px;
+  height:2.5em;
+  padding:.2em;
+}
+.mdl-button {
+  position: relative;
+  left: .5em;
+}

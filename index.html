@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do App</title>
+    <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-cyan.min.css" />
+ <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles\main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- Material Design icon font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      <h1 class="mdl-card__title_text">To-Do Today</h1>
+    </div>
+    <div class="list_items_card">
+      <ul  id="toDoList">
+      </ul>
+    </div>
+    <form class= "mdl-card__actions mdl-card--border" id="addToDoForm">
+      <label for="newToDoText">New To-Do</label>
+      <input type="text" id="newToDoText" placeholder="Add New Task">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+        <i class="material-icons">add</i>
+      </button>
+
+    </form>
+  </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+      <script src="app.js"></script>
+  </body>
+</html>
