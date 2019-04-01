@@ -1,13 +1,17 @@
 function onReady() {
-  const toDos = [];
+  let toDos = [];
   const addToDoForm = document.getElementById('addToDoForm');
+  let id=0;
+
+
   function createNewToDo() {
     const newToDoText = document.getElementById('newToDoText');
     if (!newToDoText.value) { return;}
 
     toDos.push({
       title: newToDoText.value,
-      complete: false
+      complete: false,
+      id: id++,
     });
     newToDoText.value = ' ';
     renderTheUI();
@@ -22,11 +26,22 @@ toDoList.textContent = '';
     const newLi = document.createElement('li');
     const checkbox = document.createElement('input');
     checkbox.type = "checkbox";
+    const deleteButton = document.createElement('button')
+    deleteButton.textContent = "Delete";
 
     newLi.textContent = toDo.title;
 
     toDoList.appendChild(newLi);
-    newLi.appendChild(checkbox);
+    newLi.prepend(checkbox);
+    newLi.appendChild(deleteButton);
+
+    deleteButton.addEventListener('click', event =>{
+        event.preventDefault();
+       toDos = toDos.filter( item => item.id !== toDo.id);
+       console.log(toDos);
+
+        renderTheUI();
+      });
   });
 }
 
@@ -34,7 +49,7 @@ toDoList.textContent = '';
     event.preventDefault();
     createNewToDo();
   });
-//  renderTheUI();
+renderTheUI();
 }
 
 window.onload = function() {
