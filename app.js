@@ -25,7 +25,7 @@ function onReady() {
     newLi.textContent = title;
 
     // set the button text
-    deleteButton.innerHTML = "<i class='fa fa-trash-o de'></i>";
+    deleteButton.textContent = "Delete";
 
     // newLi style
  newLi.classList.add("demo-card-wide", "mdl-shadow--2dp");
@@ -34,7 +34,7 @@ function onReady() {
    newLi.classList.add("mdl-list__item-primary-content");
 
     // deleteButton styles
-   deleteButton.classList.add("mdl-button", "mdl-js-button", "mdl-button--fab", "mdl-button--mini-fab");
+   deleteButton.classList.add("mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect")
 
     // attach the checkbox to the li
     newLi.prepend(checkbox);
